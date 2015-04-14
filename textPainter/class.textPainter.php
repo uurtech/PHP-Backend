@@ -75,19 +75,19 @@ class textPainter{
     	
 		switch ($this->format){
 			case "JPEG":
-				imagejpeg($this->img,"",$this->jpegQuality);
+				imagejpeg($this->img,$destination,$this->jpegQuality);
 				break;
 			case "PNG":
-				imagepng($this->img);
+				imagepng($this->img,$destination);
 				break;
 			case "GIF":
-				imagegif($this->img);
+				imagegif($this->img,$destination);
 				break;
 			case "WBMP":
-				imagewbmp($this->img);
+				imagewbmp($this->img,$destination);
 				break;
 			default:
-				imagepng($this->img);
+				imagepng($this->img,$destination);
 		}
     }
     
