@@ -66,7 +66,7 @@ class textPainter{
      * 
      * @access public
      */
-    public function show(){
+    public function show($destination = ""){
     	//show thumb
 		header("Content-type: image/".$this->format);	
 
